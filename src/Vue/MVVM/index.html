@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MVVM</title>
+  <header></header>
+</head>
+
+<body>
+  <div id="app">
+    <!-- <div>Hi, I am {{ account.userId }}, Join me for {{ game }} on {{ platform }}</div> -->
+    <div>
+      <p>Hi, I am {{ account.userId }}, Join me for {{ game }} on {{ platform }}</p>
+      <input v-model="game" type="text" />
+      <button>{{ btn }}</button>
+    </div>
+  </div>
+  <script src="./compiler.js"></script>
+  <script src="./Observer.js"></script>
+  <script src="./Vue.js"></script>
+  <script src="./Watcher.js"></script>
+  <script>
+    var vm = new Vue({
+      el: `#app`,
+      data: {
+        platform: 'Steam',
+        game: 'Dying Light',
+        account: {
+          userId: 'winoooops',
+          email: 'xxx@abc.com'
+        },
+        btn: 'change'
+      }
+    })
+  </script>
+</body>
+
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>水平垂直居中</title>
+  <style>
+    .container {
+      /* display: flex;
+      justify-content: center;
+      align-items: center;*/
+
+      /* position: relative; */
+
+      /*
+      text-align: center;
+      line-height: 500px;
+      */
+
+      /* display: grid; */
+
+      width: 500px;
+      height: 500px;
+      background-color: aquamarine;
+    }
+
+    .content {
+      /*
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+      */
+
+      /* display: inline-block; */
+
+      /* margin: auto; */
+
+      background-color: aliceblue;
+      width: 20px;
+      height: 20px;
+    }
+  </style>
+</head>
+
+<body>
+  <span>方法一: flex </span>
+  <span>方法二: 绝对定位</span>
+  <span>方法三: inline-block后使用text-align和line height</span>
+  <span>方法四: 父元素设置grid/flex + 子元素设置margin为auto </span>
+  <div class="container">
+    <div class="content">
+    </div>
+  </div>
+</body>
+
+</html>
